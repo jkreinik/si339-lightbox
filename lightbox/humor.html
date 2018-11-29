@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+	<main>
+		<div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".Defense">Defense</button>
+            <button type="button" class="control" data-filter=".Offense">Offense</button>
+            <button type="button" class="control" data-filter=".Coach">Coach</button>
+            <button type="button" class="control" data-filter=".SpecialTeams">Special Teams</button>
+            
+        </div>
+
+		<div class = "gallery">
+		<a href="images/bush.jpg" data-lightbox="image" data-title="Devin Bush" class="mix Defense"><img src="images/bush.jpg" alt="bush"></a>
+		<a href="images/chase.jpg" data-lightbox="image" data-title="Chase Winovich" class="mix Defense"><img src="images/chase.jpg" alt="chase"></a>
+		<a href="images/gentry.jpg" data-lightbox="image" data-title="Zach Gentry" class="mix Offense"><img src="images/gentry.jpg" alt="gentry"></a>
+		<a href="images/humor.jpg" data-lightbox="image" data-title="Josh Metellus" class="mix Defense"><img src="images/humor.jpg" alt="humor"></a>
+		<a href="images/jabril.jpg" data-lightbox="image" data-title="Jabrill Peppers" class="mix Defense"><img src="images/jabril.jpg" alt="jabril"></a>
+		<a href="images/people.jpg" data-lightbox="image" data-title="Donovan Peoples-Jones" class="mix Offense"><img src="images/people.jpg" alt="people"></a>
+		<a href="images/place.jpg" data-lightbox="image" data-title="Place Holder" class="mix SpecialTeams"><img src="images/place.jpg" alt="place"></a>
+		<a href="images/qb.jpg" data-lightbox="image" data-title="Shea Patterson" class="mix Offense"><img src="images/qb.jpg" alt="qb"></a>
+		<a href="images/team.jpg" data-lightbox="image" data-title="Jim Harbaugh" class="mix Coach"><img src="images/team.jpg" alt="team"></a>
+		</div>
+	</main>
+
+
+	<script src="js/lightbox.js"></script>
+	<script src="js/mixitup.min-1.js"></script>
+
+      <script>
+            var containerEl = document.querySelector('.gallery');
+            var mixer = mixitup(containerEl);
+      </script>
+
+</body>
+</html>
